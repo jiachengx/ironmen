@@ -1,6 +1,6 @@
 # mouse monitoring within the duration timer
 from pynput.mouse import Listener
-import time
+import time, sys
 
 def moveTo(x, y):
  print(f"moveTo: ({x}, {y})")
@@ -29,5 +29,6 @@ def main(duration):
 
 
 if __name__ == '__main__':
-    main(5)
+    timer = sys.argv[1]
+    main(timer)
     
