@@ -35,7 +35,9 @@ class MainWindow(QMainWindow):
         # On Top
         # self.setWindowFlags(Qt.WindowStaysOnTopHint)
         # On Bottom
-        self.setWindowFlags(Qt.WindowStaysOnBottomHint)
+        # self.setWindowFlags(Qt.WindowStaysOnBottomHint)
+        # hide icon
+        self.setWindowFlags(Qt.Tool)
         self.second = SecondWindow()
         self.ui.pushButton.clicked.connect(lambda: self.second.show())
 
